@@ -1,16 +1,140 @@
-.nav-bar{
-    display: flex;
-    justify-content: end;
-    background-image: url("img/bg2.png") , url("img/bg.png");
+/* header{
+    height: 600px;
+    background-image: url("img/bg2.png"),url("img/bg.png");
     background-size: cover;
-    height: 250px;
-    
-}
-img{
-    height: 20px;
-    margin: auto;
-}
-.nav-bar span{
-    margin: auto 20px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.logo{
+    height: 30px;
+
+}
+.logo_title{
+    display: flex;
+
+}
+a{
+    display: inline;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    margin-left: 50;
+
+}
+
+ */
+header{
+    height:600px;
+    width: 100%;
+    background-image: url(img/bg2.png),url(img/bg.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+#nav{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.nav_links ul{
+    list-style-type: none;
+    margin-right:50px;
+    display:flex;
+    gap: 50px;
+    
+}
+.nav_links a    {
+    text-decoration: none;
+    color:white;
+}
+
+.logo{
+    width:40px;
+}
+.logo_title img{
+    width: 152px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 140px;
+    
+}
+.content{
+    display: flex;
+
+    justify-content: space-around;
+    width: 100%;
+
+    
+}
+.first_box{
+    
+    
+    width: 40%;
+    
+}
+.first_box img{
+    
+    width: 100%;
+    justify-content: center;
+    
+
+}
+.second_box{
+    width: 40%;
+}
+.second_box h1{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    color:white;
+    width: 70%;
+}
+.second_box >p{
+    color:white;
+    width: 400px;
+}
+
+.buttons_scnd_box{
+    align-items: center;
+    gap:15px;
+    display:flex;
+}
+.buttons_scnd_box button a {
+    text-decoration:none;
+    color:white;
+    /* background-color: aliceblue; */
+   width: 100%;
+}
+.buttons_scnd_box button{
+    
+    display:flex;
+    width: 190px;
+    height:40px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color:transparent;
+    border:solid 1px white;
+    border-radius:10px;   
+}
+.boxes{
+    display:grid;
+    background-color: aqua;
+
+    width: 100%;
+    height: 800px;
+    grid-template-columns: repeat(3 , 300px);
+    grid-template-rows:repeat(2 , 200px);
+    justify-content: center;
+    align-content:center;
+    gap:15px;
+}
+.fourth-e {
+    grid-column: 1/3 ;
+}
